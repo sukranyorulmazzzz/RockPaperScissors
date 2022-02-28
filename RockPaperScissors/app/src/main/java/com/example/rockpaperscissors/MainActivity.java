@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button rock,paper,scissors;
+    ImageView rock,paper,scissors;
     TextView computerScore,userScore,result,computerChoices;
     int comScr=0,userScr=0,comChoices;
 

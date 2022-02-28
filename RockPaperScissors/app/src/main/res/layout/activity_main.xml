@@ -5,7 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/pembe"
     tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rock Paper Scissors"
+        android:textColor="@color/white"
+        android:fontFamily="@font/fontstrawberry"
+        android:textSize="50dp"
+        android:padding="20dp"
+        android:gravity="center"/>
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
@@ -15,6 +25,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="1"
+
         android:orientation="vertical"
         android:background="@color/sari"
         android:layout_height="match_parent"
@@ -22,11 +33,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fontstrawberry"
+            android:textSize="40dp"
             android:text="Computer Score:"/>
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:id="@+id/computerScore"
             android:textSize="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/cerceve"
+            android:textColor="#FF1818"
+            android:fontFamily="@font/fontstrawberry"
+            android:gravity="center"
             android:layout_height="match_parent"/>
     </LinearLayout>
     <LinearLayout
@@ -39,11 +59,22 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fontstrawberry"
+            android:textSize="40dp"
             android:text="User Score:"/>
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:id="@+id/userScore"
+            android:layout_gravity="center"
             android:textSize="50dp"
+            android:textColor="#FF1818"
+            android:background="@drawable/cerceve"
+            android:fontFamily="@font/fontstrawberry"
+            android:gravity="center"
+
+
             android:layout_height="match_parent"/>
     </LinearLayout>
 </LinearLayout>
@@ -51,6 +82,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:fontFamily="@font/fontstrawberry"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="40dp"
         android:background="@color/sari"
         android:id="@+id/result"
         />
@@ -58,6 +93,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/sari"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:fontFamily="@font/fontstrawberry"
+        android:textColor="@color/black"
         android:id="@+id/computerChoices"
         />
     <LinearLayout
@@ -67,32 +106,36 @@
         android:background="@color/sari"
         android:orientation="horizontal"
         >
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="100dp"
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:text="ROCK"
             android:onClick="mainClick"
-            android:textSize="24dp"
-            android:backgroundTint="@color/acikpembe"
-            android:layout_weight="1"
+
+            android:src="@drawable/tas"
+            android:backgroundTint="@color/sari"
+           android:layout_weight="1"
             android:id="@+id/rockBtn"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
+        <ImageView
+            android:layout_width="150dp"
             android:textSize="24dp"
             android:onClick="mainClick"
             android:text="PAPER"
-            android:layout_marginTop="100dp"
-            android:layout_height="100dp"
+
+            android:src="@drawable/kagit"
+            android:layout_marginTop="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
             android:backgroundTint="@color/mavi"
             android:id="@+id/paperBtn"/>
-        <Button
-            android:layout_width="0dp"
+        <ImageView
+            android:layout_width="150dp"
             android:textSize="19dp"
             android:text="SCISSORS"
             android:onClick="mainClick"
+            android:src="@drawable/makas"
             android:layout_weight="1"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:backgroundTint="@color/pembe"
             android:id="@+id/scissorsBtn"/>
     </LinearLayout>
